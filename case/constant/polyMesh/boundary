@@ -16,7 +16,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-5
+4
 (
     Side
     {
@@ -41,12 +41,6 @@ FoamFile
         type            patch;
         nFaces          209;
         startFace       48982;
-    }
-    defaultFaces
-    {
-        type            patch;
-        nFaces          1353;
-        startFace       49191;
     }
 )
 

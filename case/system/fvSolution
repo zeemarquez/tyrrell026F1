@@ -91,6 +91,11 @@ PIMPLE
     nOuterCorrectors 1;
     nCorrectors      2;
     nNonOrthogonalCorrectors 0;
+    residualControl
+    {
+        p               1e-7;
+        U               1e-7;
+    }
 }
 
 // ************************************************************************* //

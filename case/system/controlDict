@@ -23,13 +23,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         200;
+endTime         15;
 
-deltaT          0.001;
+deltaT          0.005;
 
 writeControl adjustableRunTime;
 
-writeInterval   10;
+writeInterval   5;
 
 purgeWrite      0;
 
@@ -54,7 +54,7 @@ functions
         type            fieldAverage;
         libs            (fieldFunctionObjects);
         writeControl    writeTime;
-        timeStart       100;
+        timeStart       5;
         fields
         (
             U

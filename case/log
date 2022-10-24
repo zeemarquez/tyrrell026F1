@@ -9,9 +9,9 @@ Build  : _76d719d1-20220624 OPENFOAM=2206 version=2206
 Arch   : "LSB;label=32;scalar=64"
 Exec   : rhoPimpleFoam
 Date   : Oct 24 2022
-Time   : 11:15:03
-Host   : d05b43d29751
-PID    : 269
+Time   : 13:33:40
+Host   : 2919339bca7d
+PID    : 266
 I/O    : uncollated
 Case   : /home/openfoam/assignment/case
 nProcs : 1

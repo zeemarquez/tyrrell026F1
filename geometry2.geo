@@ -262,13 +262,13 @@ Transfinite Curve {2, 3, 25} = 34 Using Progression 1;  //Curve inlet
 //+
 Transfinite Curve {4, 6, 5, 7} = 42 Using Progression 1.05; // Vertical close airfoil
 //+
-Transfinite Curve {8,9,10,11,22,24} = 32 Using Progression 1; // Vertical far
+Transfinite Curve {8,9,10,11,22,24} = 22 Using Progression 1; // Vertical far
 //+
 Transfinite Curve {23, 21} = 42 Using Progression 1; // Vertical close outlet
 //+
-Transfinite Curve {27, 12, 14, 26, 13, 15} = 52 Using Progression 1; //Horizontal airfoil top/bottom
+Transfinite Curve {27, 12, 14, 26, 13, 15} = 21 Using Progression 1; //Horizontal airfoil top/bottom
 //+
-Transfinite Curve {20, 16, 17, 18, 19} = 86 Using Progression 1.01; //Horizontal wake
+Transfinite Curve {20, 16, 17, 18, 19} = 66 Using Progression 1.01; //Horizontal wake
 //+
 Curve Loop(1) = {2, -8, -3, 9};
 //+
@@ -330,4 +330,17 @@ Transfinite Surface {8};
 //+
 Transfinite Surface {9};
 //+
-Recombine Surface {1, 2, 5, 3, 4, 6, 10, 7, 8, 9};
+Recombine Surface {1, 2, 5, 3, 4, 6, 10, 7, 8, 9};//+
+Extrude {0, 0, 1} {
+  Surface{1}; Surface{5}; Surface{2}; Surface{3}; Surface{4}; Surface{6}; Surface{8}; Surface{9}; Surface{7}; Surface{10}; Layers {1}; Recombine;
+}
+//+
+Physical Volume("Fluid", 248) = {1, 3, 4, 5, 6, 2, 10, 9, 7, 8};
+//+
+Physical Surface("Inlet", 249) = {36, 66, 242};
+//+
+Physical Surface("Outlet", 250) = {154, 198, 194, 172, 220, 238};
+//+
+Physical Surface("Side", 251) = {49, 71, 247, 225, 181, 203, 159, 137, 115, 93, 10, 7, 8, 9, 1, 5, 3, 4, 6};
+//+
+Physical Surface("Airfoil", 252) = {102, 124, 88};

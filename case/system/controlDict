@@ -110,37 +110,6 @@ functions
         lRef        1.;
         Aref        1.;
     }
-    sample
-    {
-        type            sets;
-        libs            (sampling);
-        writeControl    writeTime;
-        interpolationScheme cellPoint;
-        setFormat raw;
-    sets
-       (
-
-   top
-    {
-        type    cloud;
-        axis    x;
-        points   (
-        #include "suction_side.dat"
-         );
-    interpolate true ;
-    }
-    bottom
-    {
-        type    cloud;
-        axis    x;
-        points   (
-        #include "pressure_side.dat"
-         );
-    interpolate true ;
-    }
-);
-fields          ( p pMean);
-}
 
 }
 // ************************************************************************* //

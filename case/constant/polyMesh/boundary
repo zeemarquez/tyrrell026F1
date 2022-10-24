@@ -16,31 +16,37 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-4
+5
 (
     Side
     {
         type            empty;
-        nFaces          85394;
-        startFace       63760;
+        nFaces          23819;
+        startFace       24972;
     }
     Inlet
     {
         type            patch;
-        nFaces          381;
-        startFace       149154;
-    }
-    Outlet
-    {
-        type            patch;
-        nFaces          127;
-        startFace       149535;
+        nFaces          118;
+        startFace       48791;
     }
     Airfoil
     {
         type            wall;
-        nFaces          63;
-        startFace       149662;
+        nFaces          73;
+        startFace       48909;
+    }
+    Outlet
+    {
+        type            patch;
+        nFaces          209;
+        startFace       48982;
+    }
+    defaultFaces
+    {
+        type            patch;
+        nFaces          1353;
+        startFace       49191;
     }
 )
 
